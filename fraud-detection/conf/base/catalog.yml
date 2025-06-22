@@ -1,0 +1,35 @@
+transacoes_brutas:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/transaction_data.csv
+
+transacoes_tratadas:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/transacoes_tratadas.csv
+  save_args:
+    index: false
+
+transacoes_enriquecidas:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/transacoes_enriquecidas.csv
+  save_args:
+    index: false
+
+modelo_fraude:
+  type: pickle.PickleDataset
+  filepath: data/06_models/modelo_fraude.pkl
+
+dados_para_modelo:
+  type: pandas.CSVDataset
+  filepath: data/05_model_input/dados_para_modelo.csv
+  save_args:
+    index: false
+
+avaliacao_modelo:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/avaliacao_modelo.csv
+  save_args:
+    index: false
+
+fraudes_por_pais:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/09_visuals/fraudes_por_pais.png
