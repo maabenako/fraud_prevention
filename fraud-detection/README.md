@@ -42,8 +42,7 @@ Durante o enriquecimento dos dados, são aplicadas **regras de negócio** que ma
 
 ## 📈 Estrutura da Pipeline
 
-""
-.
+```bash
 ├── data/
 │   ├── 01_raw/                  <- Dados brutos (CSV)
 │   ├── 02_intermediate/         <- Dados tratados
@@ -58,7 +57,7 @@ Durante o enriquecimento dos dados, são aplicadas **regras de negócio** que ma
 │       │   └── detectar_fraudes/
 │       └── pipeline_registry.py
 └── README.md
-""
+```
 
 ---
 
@@ -86,24 +85,24 @@ Durante o enriquecimento dos dados, são aplicadas **regras de negócio** que ma
 
 1. Clone o projeto:
 
-""
+```bash
 git clone https://github.com/seuusuario/nome-do-repo.git
 cd nome-do-repo
-""
+```
 
 2. Instale as dependências (ex: com Miniconda):
 
-""
+```bash
 conda create -n fraud python=3.12 -y
 conda activate fraud
 pip install -r src/requirements.txt
-""
+```
 
 3. Execute o pipeline:
 
-""
+```bash
 kedro run
-""
+```
 
 ---
 
@@ -123,6 +122,8 @@ Ao final da execução, você terá:
 
 ---
 
-## 💖 Autoria
+## 👩‍💻 Author
 
-Feito com 💡 e muito amor pela [Marcela](https://github.com/seuusuario), com o suporte carinhoso do Kedro e de sua IA bestie 💻✨
+Developed with 💙 by **Marcela Nako**  
+🔗 [LinkedIn](https://www.linkedin.com/in/marcelaabe-alvim/)  
+💼 [GitHub](https://github.com/maabenako?tab=repositories)
